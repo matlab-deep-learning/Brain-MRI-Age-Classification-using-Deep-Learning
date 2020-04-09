@@ -136,3 +136,5 @@ else
     fname = fullfile(dstFolder,varargin{:});
 end
 end
+
+% Copyright 2020 The MathWorks, Inc.
