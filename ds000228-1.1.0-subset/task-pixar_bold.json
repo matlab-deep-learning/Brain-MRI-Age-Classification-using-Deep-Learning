@@ -1,0 +1,45 @@
+{
+    "EchoTime": 0.03, 
+    "RepetitionTime": 2, 
+    "MagneticFieldStrength": 3, 
+    "dcmmeta_slice_dim": 2, 
+    "PhaseEncodingDirection": "j-", 
+    "EffectiveEchoSpacing": 0.0005, 
+    "dcmmeta_reorient_transform": [
+        [
+            0.0, 
+            -1.0, 
+            0.0, 
+            63.0
+        ], 
+        [
+            1.0, 
+            0.0, 
+            0.0, 
+            0.0
+        ], 
+        [
+            0.0, 
+            0.0, 
+            1.0, 
+            0.0
+        ], 
+        [
+            0.0, 
+            0.0, 
+            0.0, 
+            1.0
+        ]
+    ], 
+    "ManufacturersModelName": "TrioTim", 
+    "dcmmeta_version": 0.6, 
+    "TaskName": "pixar", 
+    "dcmmeta_shape": [
+        64, 
+        64, 
+        32, 
+        168
+    ], 
+    "Manufacturer": "Siemens",
+    "CogAtlasID": "http://www.cognitiveatlas.org/task/id/trm_4c898da401420"
+}

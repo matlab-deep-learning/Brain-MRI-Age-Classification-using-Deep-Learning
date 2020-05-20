@@ -1,0 +1,6 @@
+1.1.0 2019-05-15
+  - Renamed preprocessed data folder to make clear that data were not preprocessed through fmriprep, but rather were preprocessed in SPM8. Clarified timing of reverse correlation events, and provided timings for modeling conditions based on these events, accounting for the hemodynamic lag. Updated paper reference/acknowledgements.
+
+1.0.0	2019-04-03
+
+	- Initial snapshot

@@ -1,0 +1,91 @@
+{
+  "Participant Demographics, Behavioral Data, and Scan Info":{
+    
+  "Theory of Mind (ToM) Measures Metadata": {
+    "Description":  "ToM Measures are summary scores describing performance on a ToM behavioral battery. The ToM battery is publicly available at the link below.",
+    "TermURL":"osf.io/g5zpv"
+    },
+    "ToM Booklet-Matched":{
+      "Description":"Proportion of questions answered correctly on n=24 matched items in behavioral battery. These items include the six explicit false-belief questions used to group children based on false-belief task performance."
+    },
+    "ToM Booklet-Matched-NOFB":{
+      "Description":"Proportion of questions answered correctly on n=18 matched items in behavioral battery. These items do not include the six explicit false-belief questions used to group children based on false-belief task performance."
+    },
+    "FB_Composite":{
+      "Description":"Number of explicit false-belief questions answered correctly, out of six questions. This number was used to group children as false belief task passers (5-6 out of 6 correct), inconsistent performers (3-4 out of 6 correct), and failers (0-2 out of 6 correct)."
+    },
+    "FB_Group":{
+      "Description":"Explicit false-belief task groups. Groups were assigned based on the number of explicit FB questions answered correctly (see FB_Composite)",
+      "Levels":{
+        "Pass":"5-6 out of 6 FB questions correct",
+        "Inc":"3-4 out of 6 FB questions correct",
+        "Fail":"0-2 out of 6 FB questions correct"
+      }
+      },
+
+    
+  "Nonverbal IQ Measures Metadata":{
+      "Description":"Nonverbal IQ was measured with the Wechsler Preschool and Primary Scale of Intelligence (WPPSI) Block Design task for all children younger than age five years (n=65). Children five years and older completed the Matrices task of the Kaufman Brief Intelligence Test (KBIT-2)"
+    },
+    "WPPSI BD raw":{
+      "Description": "Raw score on WPPSI block design task"
+    },
+    "WPPSI BD scaled":{
+      "Description": "Scaled score on WPPSI block design task"
+    },
+    "KBIT_raw":{
+      "Description": "Raw score on KBIT nonverbal matrices task"
+    },
+    "KBIT_standard":{
+      "Description": "Standardized score on KBIT nonverbal matrices task"
+    }
+},
+
+
+    "Dimensional Change Card Sort Metadata":{
+      "Description":"Dimensional Change Card Sort (DCCS) is a task that measures the response inhibition component of executive functions, designd for young children (Zelazo, 2006). Children ages 3-5 years old completed this task. The task is comprised of two versions: the standard version (pre-switch task and post-switch task), where children have to sort cards according to one rule (pre-switch), and then according to a new rule (post-switch), and the border version, where children must sort cards according to two rules, depending on whether the card has a border. The shared data is the summary score (0-3), described below.",
+      "Levels":{
+        "0": "Child failed the pre-switch phase of the task (fewer than 6/6 pre-switch trials correct",
+        "1": "Child passed the pre-switch phase of the task (6/6 correct) but fail the post-switch phase (fewer than 5/6 post-switch trials correct",
+        "2": "Child passed the pre- and post-switch phase of the task (6/6 pre-switch trials correct, 5-6/6 post-switch trials correct), but fail the border version of the task (fewer than 9/12 border trials correct",
+        "3": "Child passed the pre- and post-switch phase of the standard task, and passed the border version of the task"
+      }
+    },
+
+
+  "Scanlog Metadata":{
+      "Description":"Whole-brain structural and functional MRI data were acquired on one of two 3-Tesla Siemens Tim Trio scanners located at the Athinoula A. Martinos Imaging Center at MIT, using one of three 32-channel head coils (see Coil column). As participants were initially recruited for different studies, there are small differences in voxel size and slice gaps across participants (voxel size: 3 mm vs. 3.13 mm isotropic; slice gap: 0, 10% and 20%)."
+  },
+  
+  
+  "Scanlog: Scanner":{
+    "Levels": {
+      "3T1": "Scanner 1",
+      "3T2": "Scanner 2"
+    }
+  },
+  
+  "Scanlog: Coil":{
+    "Description":"Children under age five years used one of two custom 32-channel phased-array head coils made for younger (n=3, M(SD)=3.91(.42) years) or older (n=28, M(SD)=4.07(.42) years) children (Keil et al., 2011); all other participants used the standard Siemens 32-channel head coil.",
+    "Levels":{
+      "5-6yo 32ch":"Custom 32ch coil made for young children",
+      "7-8yo 32ch":"Custom 32ch coil made for older children",
+      "32ch adult": "Standard Siemens 32-channel head coil"
+    }
+  },
+  
+    "Scanlog: Voxel Size":{
+    "Levels":{
+      "3mm iso":"3mm isotropic",
+      "3.13 mm iso": "3.13 mm isotropic"
+    }
+  },
+  
+    "Scanlog: Slice Gap":{
+    "Levels":{
+      "None":"No slice gap",
+      ".1":"10% slice gap",
+      ".2":"20% slice gap"
+    }
+  }
+}

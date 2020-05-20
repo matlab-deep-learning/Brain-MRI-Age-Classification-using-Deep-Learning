@@ -1,0 +1,156 @@
+participant_id	Age	AgeGroup	Child_Adult	Gender	Handedness	ToM Booklet-Matched	ToM Booklet-Matched-NOFB	FB_Composite	FB_Group	WPPSI BD raw	WPPSI BD scaled	KBIT_raw	KBIT_standard	DCCS Summary	Scanlog: Scanner	Scanlog: Coil	Scanlog: Voxel slize	Scanlog: Slice Gap
+sub-pixar001	4.774811773	4yo	child	M	R	0.8	0.736842105	6	pass	22	13	n/a	n/a	3	3T1	7-8yo 32ch	3mm iso	0.1
+sub-pixar002	4.856947296	4yo	child	F	R	0.72	0.736842105	4	inc	18	9	n/a	n/a	2	3T1	7-8yo 32ch	3mm iso	0.1
+sub-pixar003	4.153319644	4yo	child	F	R	0.44	0.421052632	3	inc	15	9	n/a	n/a	3	3T1	7-8yo 32ch	3mm iso	0.1
+sub-pixar004	4.473648186	4yo	child	F	R	0.64	0.736842105	2	fail	17	10	n/a	n/a	3	3T1	7-8yo 32ch	3mm iso	0.2
+sub-pixar005	4.837782341	4yo	child	F	R	0.6	0.578947368	4	inc	13	5	n/a	n/a	2	3T1	7-8yo 32ch	3mm iso	0.2
+sub-pixar006	3.605749487	3yo	child	F	R	0.52	0.526315789	3	inc	9	6	n/a	n/a	2	3T1	7-8yo 32ch	3mm iso	0.2
+sub-pixar007	4.249144422	4yo	child	M	R	0.454545455	0.5	2	fail	8	3	n/a	n/a	1	3T2	7-8yo 32ch	3mm iso	0.2
+sub-pixar008	3.529089665	3yo	child	F	R	0.625	0.611111111	4	inc	16	11	n/a	n/a	3	3T1	7-8yo 32ch	3mm iso	0.1
+sub-pixar009	3.518138261	3yo	child	M	R	0.416666667	0.5	1	fail	12	8	n/a	n/a	1	3T2	5-6yo 32ch	3mm iso	0.1
+sub-pixar010	4.358658453	4yo	child	M	R	0.72	0.842105263	2	fail	18	10	n/a	n/a	2	3T2	5-6yo 32ch	3mm iso	0.1
+sub-pixar011	3.983572895	3yo	child	F	R	0.428571429	0.375	3	inc	18	12	n/a	n/a	0	3T1	7-8yo 32ch	3mm iso	0.1
+sub-pixar012	3.786447639	3yo	child	F	R	0.36	0.421052632	1	fail	19	13	n/a	n/a	2	3T2	7-8yo 32ch	3mm iso	0.1
+sub-pixar013	3.849418207	3yo	child	M	R	0.818181818	0.75	6	pass	19	13	n/a	n/a	2	3T2	5-6yo 32ch	3mm iso	0.1
+sub-pixar014	3.635865845	3yo	child	M	R	0.72	0.684210526	5	pass	16	11	n/a	n/a	2	3T1	7-8yo 32ch	3mm iso	0.1
+sub-pixar015	4.76659822	4yo	child	F	R	0.88	0.842105263	6	pass	22	14	n/a	n/a	2	3T2	7-8yo 32ch	3mm iso	0.1
+sub-pixar016	3.622176591	3yo	child	M	R	0.52	0.631578947	1	fail	18	13	n/a	n/a	1	3T1	7-8yo 32ch	3mm iso	0.1
+sub-pixar017	3.613963039	3yo	child	F	L	0.347826087	0.411764706	1	fail	11	7	n/a	n/a	0	3T1	7-8yo 32ch	3mm iso	0.1
+sub-pixar018	4.577686516	4yo	child	M	R	0.56	0.578947368	3	inc	15	7	n/a	n/a	2	3T1	7-8yo 32ch	3mm iso	0.1
+sub-pixar019	3.969883641	3yo	child	M	R	0.347826087	0.470588235	0	fail	21	15	n/a	n/a	2	3T2	7-8yo 32ch	3mm iso	0.1
+sub-pixar020	3.594798084	3yo	child	M	L	0.52	0.631578947	1	fail	12	8	n/a	n/a	2	3T2	7-8yo 32ch	3mm iso	0.1
+sub-pixar021	4.364134155	4yo	child	F	R	0.56	0.578947368	3	inc	17	10	n/a	n/a	2	3T2	7-8yo 32ch	3mm iso	0.1
+sub-pixar022	3.822039699	3yo	child	F	R	0.36	0.315789474	3	inc	n/a	n/a	n/a	n/a	n/a	3T2	7-8yo 32ch	3mm iso	0.1
+sub-pixar023	3.865845311	3yo	child	F	R	0.8	0.789473684	5	pass	17	11	n/a	n/a	2	3T2	7-8yo 32ch	3mm iso	0.1
+sub-pixar024	4.057494867	4yo	child	M	R	0.64	0.578947368	5	pass	18	11	n/a	n/a	2	3T1	7-8yo 32ch	3mm iso	0.1
+sub-pixar025	3.93155373	3yo	child	F	R	0.76	0.736842105	5	pass	16	10	n/a	n/a	3	3T2	7-8yo 32ch	3mm iso	0.1
+sub-pixar026	3.93155373	3yo	child	F	R	0.6	0.736842105	1	fail	16	10	n/a	n/a	2	3T2	7-8yo 32ch	3mm iso	0.1
+sub-pixar027	3.989048597	3yo	child	F	R	0.4	0.526315789	0	fail	12	7	n/a	n/a	1	3T2	7-8yo 32ch	3mm iso	0.1
+sub-pixar028	3.534565366	3yo	child	M	R	0.24	0.315789474	0	fail	16	11	n/a	n/a	3	3T2	7-8yo 32ch	3mm iso	0.1
+sub-pixar029	4.309377139	4yo	child	M	Ambi	0.56	0.526315789	4	inc	15	8	n/a	n/a	3	3T2	7-8yo 32ch	3mm iso	0.1
+sub-pixar030	4.156057495	4yo	child	F	R	0.68	0.684210526	4	inc	23	16	n/a	n/a	3	3T1	7-8yo 32ch	3mm iso	0.1
+sub-pixar031	4.084873374	4yo	child	F	R	0.291666667	0.333333333	1	fail	16	10	n/a	n/a	2	3T2	7-8yo 32ch	3mm iso	0.1
+sub-pixar032	5.43	5yo	child	F	R	0.590909091	0.625	3	inc	n/a	n/a	20	112	2	3T1	32ch adult	3mm iso	0.1
+sub-pixar033	5.81	5yo	child	M	R	0.681818182	0.6875	4	inc	n/a	n/a	15	92	2	3T2	32ch adult	3mm iso	0.1
+sub-pixar034	5.99	5yo	child	M	R	0.818181818	0.8125	5	pass	n/a	n/a	32	138	2	3T2	32ch adult	3mm iso	0.1
+sub-pixar035	5.99	5yo	child	M	R	0.909090909	0.875	6	pass	n/a	n/a	17	99	3	3T2	32ch adult	3mm iso	0.1
+sub-pixar036	5.39	5yo	child	F	R	0.818181818	0.75	6	pass	n/a	n/a	16	100	3	3T2	32ch adult	3mm iso	0.1
+sub-pixar037	5.52	5yo	child	M	R	0.818181818	0.875	4	inc	n/a	n/a	18	106	2	3T2	32ch adult	3mm iso	0.1
+sub-pixar038	5.55	5yo	child	F	R	0.681818182	0.625	5	pass	n/a	n/a	19	109	2	3T2	32ch adult	3mm iso	0.1
+sub-pixar039	5.54	5yo	child	M	R	0.761904762	0.666666667	6	pass	n/a	n/a	18	106	2	3T1	32ch adult	3mm iso	0.1
+sub-pixar040	5.29	5yo	child	M	L	0.5	0.5	3	inc	n/a	n/a	15	100	2	3T1	32ch adult	3mm iso	0.1
+sub-pixar041	5.49	5yo	child	M	R	0.772727273	0.6875	6	pass	n/a	n/a	24	121	2	3T2	32ch adult	3mm iso	0.1
+sub-pixar042	5.01	5yo	child	F	L	0.681818182	0.75	3	inc	n/a	n/a	18	110	2	3T2	32ch adult	3mm iso	0.1
+sub-pixar043	5.79	5yo	child	M	Ambi	0.863636364	0.875	5	pass	n/a	n/a	30	141	3	3T2	32ch adult	3mm iso	0.1
+sub-pixar044	5.76	5yo	child	M	R	0.727272727	0.6875	5	pass	n/a	n/a	15	92	2	3T2	32ch adult	3mm iso	0.1
+sub-pixar045	5.18	5yo	child	M	L	0.590909091	0.75	1	fail	n/a	n/a	20	116	2	3T1	32ch adult	3mm iso	0.1
+sub-pixar046	5.97	5yo	child	F	R	0.590909091	0.625	3	inc	n/a	n/a	20	108	3	3T1	32ch adult	3mm iso	0.1
+sub-pixar047	5.47	5yo	child	F	R	0.863636364	0.8125	6	pass	n/a	n/a	14	92	2	3T1	32ch adult	3mm iso	0.1
+sub-pixar048	5.99	5yo	child	M	R	0.818181818	0.75	6	pass	n/a	n/a	25	120	2	3T1	32ch adult	3mm iso	0.1
+sub-pixar049	5.23	5yo	child	M	R	0.590909091	0.625	3	inc	n/a	n/a	17	107	3	3T1	32ch adult	3mm iso	0.1
+sub-pixar050	5.31	5yo	child	F	R	0.772727273	0.75	5	pass	n/a	n/a	20	116	3	3T2	32ch adult	3mm iso	0.1
+sub-pixar051	5.38	5yo	child	M	R	0.818181818	0.75	6	pass	n/a	n/a	19	109	2	3T2	32ch adult	3mm iso	0.1
+sub-pixar052	5.46	5yo	child	F	R	0.681818182	0.625	5	pass	n/a	n/a	27	130	2	3T2	32ch adult	3mm iso	0.1
+sub-pixar053	5.46	5yo	child	M	R	0.818181818	0.8125	5	pass	n/a	n/a	21	114	2	3T2	32ch adult	3mm iso	0.1
+sub-pixar054	5.99	5yo	child	M	R	0.909090909	0.9375	5	pass	n/a	n/a	36	148	3	3T1	32ch adult	3mm iso	0.1
+sub-pixar055	5.82	5yo	child	M	L	0.863636364	0.8125	6	pass	n/a	n/a	20	108	3	3T1	32ch adult	3mm iso	0.1
+sub-pixar056	5.26	5yo	child	F	R	0.545454545	0.4375	5	pass	n/a	n/a	19	113	2	3T2	32ch adult	3mm iso	0.1
+sub-pixar057	5.66	5yo	child	F	R	0.863636364	0.875	5	pass	n/a	n/a	20	112	2	3T1	32ch adult	3mm iso	0.1
+sub-pixar058	5.13	5yo	child	F	R	0.363636364	0.25	4	inc	n/a	n/a	14	97	2	3T1	32ch adult	3mm iso	0.1
+sub-pixar059	5.51	5yo	child	F	L	0.681818182	0.625	5	pass	n/a	n/a	18	106	3	3T2	32ch adult	3mm iso	0.1
+sub-pixar060	5.12	5yo	child	F	R	0.954545455	0.9375	6	pass	n/a	n/a	15	100	3	3T2	32ch adult	3mm iso	0.1
+sub-pixar061	5.56	5yo	child	F	Ambi	0.727272727	0.6875	5	pass	n/a	n/a	21	114	2	3T1	32ch adult	3mm iso	0.1
+sub-pixar062	5.46	5yo	child	F	R	0.772727273	0.75	5	pass	n/a	n/a	23	118	2	3T2	32ch adult	3mm iso	0.1
+sub-pixar063	5.33	5yo	child	M	L	0.318181818	0.375	1	fail	n/a	n/a	16	104	2	3T1	32ch adult	3mm iso	0.1
+sub-pixar064	5.44	5yo	child	M	R	0.545454545	0.5625	3	inc	n/a	n/a	26	127	3	3T2	32ch adult	3mm iso	0.1
+sub-pixar065	5.02	5yo	child	F	R	0.909090909	0.9375	5	pass	n/a	n/a	21	114	2	3T1	32ch adult	3mm iso	0.1
+sub-pixar066	7	7yo	child	F	R	0.818181818	0.875	4	inc	n/a	n/a	31	123	n/a	3T2	32ch adult	3mm iso	0.1
+sub-pixar067	7.92	7yo	child	F	R	0.909090909	0.875	6	pass	n/a	n/a	33	124	n/a	3T2	32ch adult	3mm iso	0.1
+sub-pixar068	7.92	7yo	child	F	R	0.863636364	0.875	5	pass	n/a	n/a	38	137	n/a	3T2	32ch adult	3mm iso	0.1
+sub-pixar069	7.96	7yo	child	M	R	0.909090909	0.875	6	pass	n/a	n/a	16	79	n/a	3T2	32ch adult	3mm iso	0.1
+sub-pixar070	7.15	7yo	child	F	R	0.909090909	0.875	6	pass	n/a	n/a	30	120	n/a	3T1	32ch adult	3mm iso	0.1
+sub-pixar071	7.13	7yo	child	M	R	0.684210526	0.6	4	inc	n/a	n/a	30	120	n/a	3T1	32ch adult	3mm iso	0.1
+sub-pixar072	7.91	7yo	child	F	R	0.909090909	0.875	6	pass	n/a	n/a	26	108	n/a	3T2	32ch adult	3mm iso	0.1
+sub-pixar073	7.95	7yo	child	F	R	0.818181818	0.75	6	pass	n/a	n/a	42	147	n/a	3T1	32ch adult	3mm iso	0.1
+sub-pixar074	7.95	7yo	child	M	R	0.863636364	0.8125	6	pass	n/a	n/a	40	143	n/a	3T1	32ch adult	3mm iso	0.1
+sub-pixar075	7.83	7yo	child	M	R	0.818181818	0.8125	5	pass	n/a	n/a	26	108	n/a	3T1	32ch adult	3mm iso	0.1
+sub-pixar076	7.06	7yo	child	M	R	0.909090909	0.875	6	pass	n/a	n/a	17	87	n/a	3T2	32ch adult	3mm iso	0.1
+sub-pixar077	9.45	8-12yo	child	M	R	1	1	6	pass	n/a	n/a	42	139	n/a	3T2	32ch adult	3mm iso	0.1
+sub-pixar078	8.6	8-12yo	child	F	R	0.863636364	0.875	5	pass	n/a	n/a	44	149	n/a	3T2	32ch adult	3mm iso	0.1
+sub-pixar079	7.07	7yo	child	M	R	0.818181818	0.8125	5	pass	n/a	n/a	17	87	n/a	3T1	32ch adult	3mm iso	0.1
+sub-pixar080	7.91	7yo	child	M	R	0.909090909	0.875	6	pass	n/a	n/a	38	137	n/a	3T1	32ch adult	3mm iso	0.1
+sub-pixar081	7.91	7yo	child	F	R	0.909090909	0.875	6	pass	n/a	n/a	30	116	n/a	3T1	32ch adult	3mm iso	0.1
+sub-pixar082	9.76	8-12yo	child	F	R	0.818181818	0.75	6	pass	n/a	n/a	34	114	n/a	3T2	32ch adult	3mm iso	0.1
+sub-pixar083	7.28	7yo	child	F	R	0.909090909	0.875	6	pass	n/a	n/a	30	120	n/a	3T2	32ch adult	3mm iso	0.1
+sub-pixar084	7.1	7yo	child	M	R	0.727272727	0.75	4	inc	n/a	n/a	23	105	n/a	3T2	32ch adult	3mm iso	0.1
+sub-pixar085	9.48	8-12yo	child	F	R	0.909090909	0.875	6	pass	n/a	n/a	31	109	n/a	3T1	32ch adult	3mm iso	0.1
+sub-pixar086	7.46	7yo	child	F	R	1	1	6	pass	n/a	n/a	33	125	n/a	3T2	32ch adult	3mm iso	0.1
+sub-pixar087	9.96	8-12yo	child	M	R	1	1	6	pass	n/a	n/a	39	128	n/a	3T1	32ch adult	3mm iso	0.1
+sub-pixar088	7.71	7yo	child	M	R	0.863636364	0.875	5	pass	n/a	n/a	27	110	n/a	3T1	32ch adult	3mm iso	0.1
+sub-pixar089	8.02	8-12yo	child	M	R	0.818181818	0.75	6	pass	n/a	n/a	40	141	n/a	3T1	32ch adult	3mm iso	0.1
+sub-pixar090	8.15	8-12yo	child	M	R	0.947368421	0.928571429	5	pass	n/a	n/a	34	125	n/a	3T2	32ch adult	3mm iso	0.1
+sub-pixar091	9.7	8-12yo	child	M	R	0.909090909	0.875	6	pass	n/a	n/a	36	119	n/a	3T2	32ch adult	3mm iso	0.1
+sub-pixar092	8.48	8-12yo	child	M	R	0.947368421	0.928571429	5	pass	n/a	n/a	35	127	n/a	3T2	32ch adult	3mm iso	0.1
+sub-pixar093	8.59	8-12yo	child	F	R	0.818181818	0.8125	5	pass	n/a	n/a	37	130	n/a	3T1	32ch adult	3mm iso	0.1
+sub-pixar094	9.52	8-12yo	child	F	R	1	1	6	pass	n/a	n/a	34	115	n/a	3T2	32ch adult	3mm iso	0.1
+sub-pixar095	9.94	8-12yo	child	F	R	1	1	6	pass	n/a	n/a	41	134	n/a	3T2	32ch adult	3mm iso	0.1
+sub-pixar096	7.13	7yo	child	F	R	0.772727273	0.75	5	pass	n/a	n/a	29	118	n/a	3T1	32ch adult	3mm iso	0.1
+sub-pixar097	8.87	8-12yo	child	F	L	0.958333333	0.944444444	6	pass	n/a	n/a	33	119	n/a	3T1	32ch adult	3.13 mm iso	None
+sub-pixar098	10.19	8-12yo	child	M	R	1	1	6	pass	n/a	n/a	36	117	n/a	3T1	32ch adult	3.13 mm iso	None
+sub-pixar099	7.66	7yo	child	M	R	1	1	6	pass	n/a	n/a	28	113	n/a	3T1	32ch adult	3mm iso	0.2
+sub-pixar100	9.59	8-12yo	child	M	R	0.96	1	5	pass	n/a	n/a	29	103	n/a	3T1	32ch adult	3mm iso	0.2
+sub-pixar101	11.17	8-12yo	child	M	R	0.96	0.947368421	6	pass	n/a	n/a	43	132	n/a	3T1	32ch adult	3.13 mm iso	None
+sub-pixar102	11.17	8-12yo	child	F	R	1	1	6	pass	n/a	n/a	35	110	n/a	3T1	32ch adult	3.13 mm iso	None
+sub-pixar103	10.55	8-12yo	child	M	R	0.96	0.947368421	6	pass	n/a	n/a	36	115	n/a	3T1	32ch adult	3.13 mm iso	None
+sub-pixar104	8.57	8-12yo	child	F	R	1	1	6	pass	n/a	n/a	38	133	n/a	3T1	32ch adult	3.13 mm iso	None
+sub-pixar105	8.66	8-12yo	child	M	R	0.916666667	0.888888889	6	pass	n/a	n/a	30	114	n/a	3T1	32ch adult	3.13 mm iso	None
+sub-pixar106	8.02	8-12yo	child	M	R	0.8	0.789473684	5	pass	n/a	n/a	31	116	n/a	3T1	32ch adult	3.13 mm iso	None
+sub-pixar107	11.51	8-12yo	child	M	R	1	1	6	pass	n/a	n/a	34	106	n/a	3T1	32ch adult	3.13 mm iso	None
+sub-pixar108	10.7	8-12yo	child	F	R	0.96	0.947368421	6	pass	n/a	n/a	32	104	n/a	3T1	32ch adult	3.13 mm iso	None
+sub-pixar109	10.38	8-12yo	child	F	R	0.96	0.947368421	6	pass	n/a	n/a	30	100	n/a	3T1	32ch adult	3.13 mm iso	None
+sub-pixar110	10.78	8-12yo	child	F	R	1	1	6	pass	n/a	n/a	38	122	n/a	3T1	32ch adult	3.13 mm iso	None
+sub-pixar111	8.62	8-12yo	child	F	R	1	1	6	pass	n/a	n/a	37	130	n/a	3T1	32ch adult	3.13 mm iso	None
+sub-pixar112	12.05	8-12yo	child	M	R	1	1	6	pass	n/a	n/a	37	113	n/a	3T1	32ch adult	3.13 mm iso	None
+sub-pixar113	10.29	8-12yo	child	F	R	1	1	6	pass	n/a	n/a	34	112	n/a	3T1	32ch adult	3.13 mm iso	None
+sub-pixar114	7.43	7yo	child	M	R	0.88	0.894736842	5	pass	n/a	n/a	32	122	n/a	3T1	32ch adult	3.13 mm iso	None
+sub-pixar115	9.68	8-12yo	child	F	R	1	1	6	pass	n/a	n/a	29	103	n/a	3T1	32ch adult	3.13 mm iso	None
+sub-pixar116	7.68	7yo	child	F	R	0.92	0.947368421	5	pass	n/a	n/a	30	117	n/a	3T1	32ch adult	3.13 mm iso	None
+sub-pixar117	12.3	8-12yo	child	M	R	1	1	6	pass	n/a	n/a	38	116	n/a	3T1	32ch adult	3.13 mm iso	None
+sub-pixar118	10.5	8-12yo	child	F	R	1	1	6	pass	n/a	n/a	37	119	n/a	3T1	32ch adult	3.13 mm iso	None
+sub-pixar119	8.62	8-12yo	child	F	R	1	1	5	pass	n/a	n/a	33	121	n/a	3T1	32ch adult	3.13 mm iso	None
+sub-pixar120	11.48	8-12yo	child	F	R	1	1	5	pass	n/a	n/a	38	117	n/a	3T1	32ch adult	3.13 mm iso	None
+sub-pixar121	8.76	8-12yo	child	F	R	1	1	6	pass	n/a	n/a	37	130	n/a	3T1	32ch adult	3.13 mm iso	None
+sub-pixar122	7.21	7yo	child	M	R	1	1	6	pass	n/a	n/a	31	119	n/a	3T1	32ch adult	3mm iso	0.2
+sub-pixar123	27.06	Adult	adult	F	R	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	3T1	32ch adult	3.13 mm iso	None
+sub-pixar124	33.44	Adult	adult	M	R	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	3T1	32ch adult	3.13 mm iso	None
+sub-pixar125	31	Adult	adult	M	R	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	3T1	32ch adult	3.13 mm iso	None
+sub-pixar126	19	Adult	adult	F	R	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	3T1	32ch adult	3.13 mm iso	None
+sub-pixar127	23	Adult	adult	F	R	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	3T1	32ch adult	3.13 mm iso	None
+sub-pixar128	27	Adult	adult	M	R	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	3T1	32ch adult	3.13 mm iso	0.1
+sub-pixar129	23	Adult	adult	F	R	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	3T1	32ch adult	3.13 mm iso	0.1
+sub-pixar130	21	Adult	adult	F	R	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	3T1	32ch adult	3.13 mm iso	0.1
+sub-pixar131	39	Adult	adult	M	R	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	3T1	32ch adult	3.13 mm iso	0.1
+sub-pixar132	22	Adult	adult	F	R	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	3T1	32ch adult	3.13 mm iso	0.1
+sub-pixar133	21	Adult	adult	M	R	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	3T1	32ch adult	3.13 mm iso	0.1
+sub-pixar134	25	Adult	adult	M	R	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	3T1	32ch adult	3.13 mm iso	0.1
+sub-pixar135	21	Adult	adult	F	R	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	3T1	32ch adult	3.13 mm iso	0.1
+sub-pixar136	25	Adult	adult	F	R	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	3T1	32ch adult	3.13 mm iso	0.1
+sub-pixar137	34	Adult	adult	F	R	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	3T1	32ch adult	3.13 mm iso	0.1
+sub-pixar138	28	Adult	adult	F	R	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	3T1	32ch adult	3.13 mm iso	0.1
+sub-pixar139	18	Adult	adult	F	R	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	3T1	32ch adult	3.13 mm iso	0.1
+sub-pixar140	19	Adult	adult	M	R	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	3T1	32ch adult	3.13 mm iso	0.1
+sub-pixar141	22	Adult	adult	F	R	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	3T1	32ch adult	3.13 mm iso	0.1
+sub-pixar142	33	Adult	adult	F	R	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	3T2	32ch adult	3.13 mm iso	0.1
+sub-pixar143	22	Adult	adult	F	R	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	3T1	32ch adult	3.13 mm iso	0.1
+sub-pixar144	20	Adult	adult	F	R	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	3T1	32ch adult	3.13 mm iso	0.1
+sub-pixar145	22	Adult	adult	F	R	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	3T1	32ch adult	3.13 mm iso	0.1
+sub-pixar146	18	Adult	adult	M	R	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	3T1	32ch adult	3.13 mm iso	0.1
+sub-pixar147	21	Adult	adult	M	L	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	3T1	32ch adult	3.13 mm iso	0.1
+sub-pixar148	31	Adult	adult	M	R	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	3T1	32ch adult	3.13 mm iso	0.1
+sub-pixar149	24	Adult	adult	F	R	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	3T1	32ch adult	3.13 mm iso	0.1
+sub-pixar150	19	Adult	adult	F	R	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	3T1	32ch adult	3.13 mm iso	0.1
+sub-pixar151	23	Adult	adult	F	R	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	3T1	32ch adult	3.13 mm iso	0.1
+sub-pixar152	21	Adult	adult	F	R	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	3T1	32ch adult	3.13 mm iso	0.1
+sub-pixar153	30	Adult	adult	M	R	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	3T1	32ch adult	3.13 mm iso	0.1
+sub-pixar154	29	Adult	adult	M	R	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	3T1	32ch adult	3.13 mm iso	0.1
+sub-pixar155	26	Adult	adult	M	R	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	3T1	32ch adult	3.13 mm iso	0.1

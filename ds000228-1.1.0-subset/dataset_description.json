@@ -1,0 +1,21 @@
+{
+    "Name": "MRI data of 3-12 year old children and adults during viewing of a short animated film",
+    "BIDSVersion": "1.0.1",
+    "License": "PDDL",
+    "Authors": [
+        "Richardson, Hilary",
+        "Lisandrelli, Grace",
+        "Riobueno-Naylor, Alexa",
+        "Saxe, Rebecca"
+    ],
+    "Acknowledgements": "We thank the Athinoula A. Martinos Imaging Center at the McGovern Institute for Brain Research at MIT, Jorie Koster-Hale, Natalia Velez-Alicea, Mika Asaba, and Nir Jacoby for help with data collection. We thank Todd Thompson for his work making this dataset publicly available.",
+    "HowToAcknowledge": "Richardson, H., Lisandrelli, G., Riobueno-Naylor, A., & Saxe, R. (2018). Development of the social brain from age three to twelve years. Nature communications, 9(1), 1027.",
+    "Funding": [
+        "This project was supported by a NSF Graduate Research Fellowship (#1122374 to HR), and an NSF CAREER award (#095518 to RS), NIH R01-MH096914-05, a Middleton Chair grant (RS), and support from the David and Lucile Packard Foundation (to RS)"
+    ],
+    "ReferencesAndLinks": [
+        "Richardson, H., Lisandrelli, G., Riobueno-Naylor, A., & Saxe, R. (2018). Development of the social brain from age three to twelve years. Nature communications, 9(1), 1027.",
+        "https://www.nature.com/articles/s41467-018-03399-2"
+    ],
+    "DatasetDOI": ""
+}

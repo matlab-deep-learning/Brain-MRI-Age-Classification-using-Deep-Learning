@@ -6,7 +6,7 @@ function exemplars = prepare2DImageDataset(srcFolder,dstFolder,augmentDataset,ap
 arguments
     srcFolder (1,:) char % source folder location of 3D brain volumes, organized by participant
     dstFolder (1,:) char = '' % destination folder for 2D horizontal midslice images, organized by age class
-    augmentDataset (1,1) logical = false % specify whether to apply offline data augmentation (a copy of image flipped 180 degrees). 
+    augmentDataset (1,1) logical = false % specify whether to apply offline data augmentation (a copy of image flipped 180 degrees).
     applySkullStripping (1,1) logical = false % specify whether to apply skull-stripping
 end
 
@@ -107,7 +107,7 @@ end
 for i = 1:numel(mid_slices)
     
     fileName = sprintf('image_%03d.png', i);
-    outImg = histeq(convert2img{i},avg_intensity);    
+    outImg = histeq(convert2img{i},avg_intensity);
     
     if ~isempty(dstFolder)
         imwrite(outImg,strcat(dstFolder,fileName),'mode','lossless');

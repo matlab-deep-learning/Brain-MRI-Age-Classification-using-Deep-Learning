@@ -1,4 +1,3 @@
-
 # **Brain MRI Age Classification Using Deep Learning**
 
 This example shows how to work with an MRI brain image dataset and how to use transfer learning to modify and retrain ResNet-18, a pretrained convolutional neural network, to perform image classification on that dataset.
@@ -19,22 +18,13 @@ This example works though multiple steps of a deep learning workflow:
 - _Training_ a deep learning model to perform chronological age classification
 - _Evaluating_ the trained model
 
-## **Getting the Data**
 
-The dataset is available for download via the OpenNEURO data sharing platform. 
+## **Running the Example**
 
-Steps: 
-1. Download OpenNeuro dataset: https://openneuro.org/datasets/ds000228/versions/1.1.0 
-2. Copy dataset folder to the code root folder.
-
-## **Running the Code**
-
-To run:
-1. Open `BrainMRIAgeClassificationUsingDeepLearning.mlx`
-2. Run `BrainMRIAgeClassificationUsingDeepLearning.mlx`
+Open and run the live script `BrainMRIAgeClassificationUsingDeepLearning.mlx`
 
 Requires:
-- [MATLAB](https://www.mathworks.com/products/matlab.html)
+- [MATLAB](https://www.mathworks.com/products/matlab.html) (version R2019b or later)
 - [Deep Learning Toolbox](https://www.mathworks.com/products/deep-learning.html)
 - [Image Processing Toolbox](https://www.mathworks.com/products/image.html)
 
