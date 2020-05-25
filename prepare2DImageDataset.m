@@ -5,7 +5,7 @@ function exemplars = prepare2DImageDataset(srcFolder,dstFolder,augmentDataset,ap
 
 arguments
     srcFolder (1,:) char % source folder location of 3D brain volumes, organized by participant
-    dstFolder (1,:) char = '' % destination folder for 2D horizontal midslice images, organized by age class
+    dstFolder (1,:) char = '' % destination folder for 2D axial midslice images, organized by age class
     augmentDataset (1,1) logical = false % specify whether to apply offline data augmentation (a copy of image flipped 180 degrees).
     applySkullStripping (1,1) logical = false % specify whether to apply skull-stripping
 end
@@ -59,7 +59,7 @@ exemplars{3} = prepare2DImageDataset_(brainVolumes_Adults,fullfile_(dstFolder,'\
 end
 
 
-% prepare2DImageDataset is a function that takes in the MRI image volume data for each label. It extracts the horizontal midslice of each MRI scan volume, applies normalization and other optional processing (skull stripping, augmentation), and saves the reduced 2D image dataset to a specified folder tree organized by label for downstream training, validation, and testing.
+% prepare2DImageDataset is a function that takes in the MRI image volume data for each label. It extracts the axial midslice of each MRI scan volume, applies normalization and other optional processing (skull stripping, augmentation), and saves the reduced 2D image dataset to a specified folder tree organized by label for downstream training, validation, and testing.
 % The function's processing options can be used to:
 % strip the skull from the 2D images (imType set to 'strip')
 % augment the dataset by saving added copies of each 2D image flipped by 180 degrees (imModify set to true)
@@ -72,7 +72,7 @@ end
 
 [~, ~, k, ~] = size(srcData{1});
 
-% Extract horizontal mid-slice from each image volume
+% Extract axial mid-slice from each image volume
 mid_slices = cellfun(@squeeze,cellfun(@double,cellfun(@(x)x(:,:,round(k/2),1),srcData,'un',0),'UniformOutput',false),'UniformOutput',false);
 
 % Include data from the preprocessed image that does not include the skull
@@ -97,7 +97,7 @@ convert2img = cellfun(@ind2rgb, mid_slices,map,'UniformOutput',false);
 
 avg_intensity = mean(cell2mat(cellfun(@imhist,convert2img,'UniformOutput',false)),2);
 
-% Create a copy if the image and rorate the image by 180 degrees
+% Create a copy of the image and rotate it by 180 degrees
 if applyAugmentation
     convert2img_2 = cellfun(@ind2rgb, cellfun(@(x)rot90(x,2),mid_slices,'UniformOutput',false),map,'UniformOutput',false);
     avg_intensity_2 = mean(cell2mat(cellfun(@imhist,convert2img_2,'UniformOutput',false)),2);
