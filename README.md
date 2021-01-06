@@ -34,7 +34,7 @@ Optional:
 ## **References**
 \[1\] Richardson, H., Lisandrelli, G., Riobueno-Naylor, A., & Saxe, R. (2018). Development of the social brain from age three to twelve years. Nature Communications, 9(1), 1027. https://www.nature.com/articles/s41467-018-03399-2 
 
-Copyright 2020 The MathWorks, Inc.
+Copyright 2020-2021 The MathWorks, Inc.
 
 [![View Brain-MRI-Age-Classification-using-Deep-Learning on File Exchange](https://www.mathworks.com/matlabcentral/images/matlab-file-exchange.svg)](https://www.mathworks.com/matlabcentral/fileexchange/74941-brain-mri-age-classification-using-deep-learning)
 
