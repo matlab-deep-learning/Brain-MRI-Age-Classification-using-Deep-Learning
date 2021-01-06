@@ -28,6 +28,9 @@ Requires:
 - [Deep Learning Toolbox](https://www.mathworks.com/products/deep-learning.html)
 - [Image Processing Toolbox](https://www.mathworks.com/products/image.html)
 
+Optional:
+- [Parallel Computing Toolbox](https://www.mathworks.com/products/parallel-computing.html)
+
 ## **References**
 \[1\] Richardson, H., Lisandrelli, G., Riobueno-Naylor, A., & Saxe, R. (2018). Development of the social brain from age three to twelve years. Nature Communications, 9(1), 1027. https://www.nature.com/articles/s41467-018-03399-2 
 
