@@ -1,23 +1,29 @@
-function exemplars = prepare2DImageDataset(srcFolder,dstFolder,augmentDataset,applySkullStripping)
-%PREPAREMRIAGECLASSIFICATIONDATASET Prepare 2D midslice image dataset from 3D brain volume dataset
+function exemplars = prepare2DImageDataset(srcPath,dstPath,augmentDataset,applySkullStripping)
+%PREPAREMRIAGECLASSIFICATIONDATASET Prepare 2D midslice image dataset folders from 3D brain volume dataset folders
+%
 % OUTPUTS
 %   exemplars: cell array of exemplar 2D midslice images (without skull-stripping or augmentation operations) as a reference, one per age class
+%
+% USAGE
+%   exemplars = prepare2DImageDataset(srcFlder): returns exemplar images for each class without preparing 2D image dataset folder
+%   prepare2DImageDataset(srcFolder,dstFolder,...): creates 2D midslice image dataset folder in specified dstFolder
+%
 
 arguments
-    srcFolder (1,:) char % source folder location of 3D brain volumes, organized by participant
-    dstFolder (1,:) char = '' % destination folder for 2D axial midslice images, organized by age class
+    srcPath (1,:) char % source folder location of 3D brain volumes, organized by participant folders
+    dstPath (1,:) char = '' % destination folder for 2D axial midslice images, organized by age class folders
     augmentDataset (1,1) logical = false % specify whether to apply offline data augmentation (a copy of image flipped 180 degrees).
     applySkullStripping (1,1) logical = false % specify whether to apply skull-stripping
 end
 
 % Create classification image set folders
-if ~isempty(dstFolder)
-    assert(~exist(dstFolder,'dir'));
-    mkdir(dstFolder);
+if ~isempty(dstPath)
+    assert(~exist(dstPath,'dir'));
+    mkdir(dstPath);
 end
 
 % Load 3D image volumes into MATLAB workspace
-allFiles = dir(strcat(srcFolder,'\*\*_anat.nii.gz'));
+allFiles = dir(fullfile(srcPath,'*','*_anat.nii.gz'));
 
 fileDir  = fullfile({allFiles.folder},{allFiles.name});
 
@@ -32,7 +38,7 @@ brainVolumes_Adults       = cellfun(@niftiread,srcDir_Adults,'UniformOutput',fal
 
 % Load skull stripping masks into MATLAB workspace
 if applySkullStripping
-    allFiles = dir(strcat(srcFolder,'\*\*_analysis_mask.nii.gz'));
+    allFiles = dir(fullfile(srcPath,'*','*_analysis_mask.nii.gz'));
     fileDir  = fullfile({allFiles.folder},{allFiles.name});
     
     skullMaskDir_3to5      = fileDir(1:65);
@@ -48,38 +54,41 @@ else
     skullMask_Adults = [];
 end
 
-% Extract, normalize, and augment 2D image sets. Return exemplar data i
-%fileRoot = 'MidSlice_ImageSet\Preprocessed';
+% Call the helper function prepare2DImageDataset_ for the set of
+% participant folders in each age group. Obtain an exemplar image for each
+% age group. If a destination folder is supplied, this helper extracts and
+% normalizes 2D image sets, with skull-stripping and augmentation
+% optionally applied.
 exemplars = cell(3,1);
-exemplars{1} = prepare2DImageDataset_(brainVolumes_3to5,fullfile_(dstFolder,'\Ages3-5\'),augmentDataset,applySkullStripping, skullMask_3to5);
-exemplars{2} = prepare2DImageDataset_(brainVolumes_7to12,fullfile_(dstFolder,'\Ages7-12\'),augmentDataset,applySkullStripping, skullMask_7to12);
-exemplars{3} = prepare2DImageDataset_(brainVolumes_Adults,fullfile_(dstFolder,'\Adults\'),augmentDataset,applySkullStripping, skullMask_Adults);
+exemplars{1} = prepare2DImageDataset_(brainVolumes_3to5,fullfile_(dstPath,'\Ages3-5\'),augmentDataset,applySkullStripping, skullMask_3to5);
+exemplars{2} = prepare2DImageDataset_(brainVolumes_7to12,fullfile_(dstPath,'\Ages7-12\'),augmentDataset,applySkullStripping, skullMask_7to12);
+exemplars{3} = prepare2DImageDataset_(brainVolumes_Adults,fullfile_(dstPath,'\Adults\'),augmentDataset,applySkullStripping, skullMask_Adults);
 
 
 end
 
-
-% prepare2DImageDataset is a function that takes in the MRI image volume data for each label. It extracts the axial midslice of each MRI scan volume, applies normalization and other optional processing (skull stripping, augmentation), and saves the reduced 2D image dataset to a specified folder tree organized by label for downstream training, validation, and testing.
-% The function's processing options can be used to:
-% strip the skull from the 2D images (imType set to 'strip')
-% augment the dataset by saving added copies of each 2D image flipped by 180 degrees (imModify set to true)
-function exemplar = prepare2DImageDataset_(srcData,dstFolder,applyAugmentation,applySkullStripping,skullStrippingMask)
+% Helper function prepare2DImageDataset_ reads from a set (cell array) of
+% source folders containing participant 3D volume data. It computes 2D
+% image extraction, normalization, and optional processing as described
+% above. It returns a single 2D image exemplar and writes the computed 2D
+% image files to a destination folder (if specified).
+function exemplar = prepare2DImageDataset_(srcFolders,dstFolder,applyAugmentation,applySkullStripping,skullStrippingMask)
 
 if ~isempty(dstFolder)
     assert(~exist(dstFolder,'dir'));
     mkdir(dstFolder);
 end
 
-[~, ~, k, ~] = size(srcData{1});
+[~, ~, k, ~] = size(srcFolders{1});
 
 % Extract axial mid-slice from each image volume
-mid_slices = cellfun(@squeeze,cellfun(@double,cellfun(@(x)x(:,:,round(k/2),1),srcData,'un',0),'UniformOutput',false),'UniformOutput',false);
+mid_slices = cellfun(@squeeze,cellfun(@double,cellfun(@(x)x(:,:,round(k/2),1),srcFolders,'un',0),'UniformOutput',false),'UniformOutput',false);
 
 % Include data from the preprocessed image that does not include the skull
 % This section only runs if you wish to 'strip' away the skull
 if applySkullStripping
     nii_strip_read = skullStrippingMask;
-    mid_slices_unstrip = cellfun(@squeeze,cellfun(@double,cellfun(@(x)x(:,:,round(k/2),1),srcData,'un',0),'UniformOutput',false),'UniformOutput',false);
+    mid_slices_unstrip = cellfun(@squeeze,cellfun(@double,cellfun(@(x)x(:,:,round(k/2),1),srcFolders,'un',0),'UniformOutput',false),'UniformOutput',false);
     mid_slices_strip = cellfun(@squeeze,cellfun(@double,cellfun(@(x)x(:,:,round(k/2),1),nii_strip_read,'un',0),'UniformOutput',false),'UniformOutput',false);
     mid_slices = cellfun(@immultiply,mid_slices_strip,mid_slices_unstrip,'UniformOutput',false);
 end
@@ -109,8 +118,8 @@ for i = 1:numel(mid_slices)
     fileName = sprintf('image_%03d.png', i);
     outImg = histeq(convert2img{i},avg_intensity);
     
-    if ~isempty(dstFolder)
-        imwrite(outImg,strcat(dstFolder,fileName),'mode','lossless');
+    if ~isempty(dstFolder) % 
+        imwrite(outImg,fullfile(dstFolder,fileName),'mode','lossless');
     end
     
     if i == 1
@@ -122,7 +131,7 @@ for i = 1:numel(mid_slices)
         outImg_2 = histeq(convert2img_2{i},avg_intensity_2);
         
         if ~isempty(dstFolder)
-            imwrite(outImg_2, strcat(dstFolder,fileName_2),'mode','lossless');
+            imwrite(outImg_2, fullfile(dstFolder,fileName_2),'mode','lossless');
         end
     end
 end
@@ -137,4 +146,4 @@ else
 end
 end
 
-% Copyright 2020 The MathWorks, Inc.
+% Copyright 2020-2021 The MathWorks, Inc.
