@@ -5,7 +5,7 @@ This example shows how to work with an MRI brain image dataset and how to use tr
 The MRI scans used in this example were obtained during a study \[1\] of social brain development conducted by researchers at the Massachussets Institute of Technology (MIT), and are available for download via the OpenNEURO platform:
     https://openneuro.org/datasets/ds000228/versions/1.1.0
 
-This example works with the horizontal midslice images from the brain MRI scan volumes and shows how these images can be classified into 3 categories according to the chronological age of the participant:
+This example shows how horizontal midslice images from the brain MRI scan volumes can be classified into 3 categories according to the chronological age of the participant:
 1. Participants Aged 3-5
 2. Participants Aged 7-12
 3. Participants older than 18, classified as Adults
