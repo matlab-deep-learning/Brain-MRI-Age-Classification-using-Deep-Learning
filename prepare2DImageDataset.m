@@ -60,9 +60,9 @@ end
 % normalizes 2D image sets, with skull-stripping and augmentation
 % optionally applied.
 exemplars = cell(3,1);
-exemplars{1} = prepare2DImageDataset_(brainVolumes_3to5,fullfile_(dstPath,'\Ages3-5\'),augmentDataset,applySkullStripping, skullMask_3to5);
-exemplars{2} = prepare2DImageDataset_(brainVolumes_7to12,fullfile_(dstPath,'\Ages7-12\'),augmentDataset,applySkullStripping, skullMask_7to12);
-exemplars{3} = prepare2DImageDataset_(brainVolumes_Adults,fullfile_(dstPath,'\Adults\'),augmentDataset,applySkullStripping, skullMask_Adults);
+exemplars{1} = prepare2DImageDataset_(brainVolumes_3to5,fullfile_(dstPath,'Ages3-5'),augmentDataset,applySkullStripping, skullMask_3to5);
+exemplars{2} = prepare2DImageDataset_(brainVolumes_7to12,fullfile_(dstPath,'Ages7-12'),augmentDataset,applySkullStripping, skullMask_7to12);
+exemplars{3} = prepare2DImageDataset_(brainVolumes_Adults,fullfile_(dstPath,'Adults'),augmentDataset,applySkullStripping, skullMask_Adults);
 
 
 end
