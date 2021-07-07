@@ -1,12 +1,12 @@
 function exemplars = prepare2DImageDataset(srcPath,dstPath,augmentDataset,applySkullStripping)
-%PREPAREMRIAGECLASSIFICATIONDATASET Prepare 2D midslice image dataset folders from 3D brain volume dataset folders
+%PREPARE2DIMAGEDATASET Prepare 2D midslice image dataset folders from 3D brain volume dataset folders
 %
 % OUTPUTS
 %   exemplars: cell array of exemplar 2D midslice images (without skull-stripping or augmentation operations) as a reference, one per age class
 %
 % USAGE
-%   exemplars = prepare2DImageDataset(srcFlder): returns exemplar images for each class without preparing 2D image dataset folder
-%   prepare2DImageDataset(srcFolder,dstFolder,...): creates 2D midslice image dataset folder in specified dstFolder
+%   exemplars = prepare2DImageDataset(srcPath): returns exemplar images for each class without preparing 2D image dataset folder
+%   prepare2DImageDataset(srcPath,dstPath, ...): creates 2D midslice image dataset folder in specified dstPath
 %
 
 arguments
@@ -27,30 +27,30 @@ allFiles = dir(fullfile(srcPath,'*','*_anat.nii.gz'));
 
 fileDir  = fullfile({allFiles.folder},{allFiles.name});
 
-srcDir_3to5      = fileDir(1:65);
-srcDir_7to12     = fileDir(66:122);
-srcDir_Adults    = fileDir(123:155);
+srcDir_3to5   = fileDir(1:65);
+srcDir_7to12  = fileDir(66:122);
+srcDir_Adults = fileDir(123:155);
 
-%Load brain volumes into MATLAB workspace
-brainVolumes_3to5         = cellfun(@niftiread,srcDir_3to5,'UniformOutput',false);
-brainVolumes_7to12        = cellfun(@niftiread,srcDir_7to12,'UniformOutput',false);
-brainVolumes_Adults       = cellfun(@niftiread,srcDir_Adults,'UniformOutput',false);
+% Load brain volumes into MATLAB workspace
+brainVolumes_3to5   = cellfun(@niftiread,srcDir_3to5,'UniformOutput',false);
+brainVolumes_7to12  = cellfun(@niftiread,srcDir_7to12,'UniformOutput',false);
+brainVolumes_Adults = cellfun(@niftiread,srcDir_Adults,'UniformOutput',false);
 
 % Load skull stripping masks into MATLAB workspace
 if applySkullStripping
     allFiles = dir(fullfile(srcPath,'*','*_analysis_mask.nii.gz'));
     fileDir  = fullfile({allFiles.folder},{allFiles.name});
     
-    skullMaskDir_3to5      = fileDir(1:65);
-    skullMaskDir_7to12     = fileDir(66:122);
-    skullMaskDir_Adults    = fileDir(123:155);
+    skullMaskDir_3to5   = fileDir(1:65);
+    skullMaskDir_7to12  = fileDir(66:122);
+    skullMaskDir_Adults = fileDir(123:155);
     
-    skullMask_3to5         = cellfun(@niftiread,skullMaskDir_3to5,'UniformOutput',false);
-    skullMask_7to12        = cellfun(@niftiread,skullMaskDir_7to12,'UniformOutput',false);
-    skullMask_Adults       = cellfun(@niftiread,skullMaskDir_Adults,'UniformOutput',false);
+    skullMask_3to5   = cellfun(@niftiread,skullMaskDir_3to5,'UniformOutput',false);
+    skullMask_7to12  = cellfun(@niftiread,skullMaskDir_7to12,'UniformOutput',false);
+    skullMask_Adults = cellfun(@niftiread,skullMaskDir_Adults,'UniformOutput',false);
 else
-    skullMask_3to5 = [];
-    skullMask_7to12 = [];
+    skullMask_3to5   = [];
+    skullMask_7to12  = [];
     skullMask_Adults = [];
 end
 
