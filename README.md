@@ -26,7 +26,7 @@ This example works though multiple steps of a deep learning workflow:
 ### **Running the Example**
 [![Open in MATLAB Online](https://www.mathworks.com/images/responsive/global/open-in-matlab-online.svg)](https://matlab.mathworks.com/open/github/v1?repo=matlab-deep-learning/Brain-MRI-Age-Classification-using-Deep-Learning&file=BrainMRIAgeClassificationUsingDeepLearning.mlx) to run the example in your web browser with no installation required. 
 
-To run on local machine or cloud instance, open and run the live script `BrainMRIAgeClassificationUsingDeepLearning.mlx`. 
+To run on your local machine or cloud instance, open &  run the live script `BrainMRIAgeClassificationUsingDeepLearning.mlx`. 
 
 Requires:
 - [MATLAB](https://www.mathworks.com/products/matlab.html) (version R2019b or later)
