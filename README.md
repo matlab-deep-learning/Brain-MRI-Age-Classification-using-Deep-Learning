@@ -4,7 +4,9 @@
 
 This example shows how to work with an MRI brain image dataset and how to use transfer learning to modify and retrain ResNet-18, a pretrained convolutional neural network, to perform image classification on that dataset.
 
-👀 [View the example](https://viewer.mathworks.com/?viewer=live_code&url=https%3A%2F%2Fwww.mathworks.com%2Fmatlabcentral%2Fmlc-downloads%2Fdownloads%2Fcb382fe4-455d-46c6-a137-a396f1cfffd7%2F9f0a19d9-cbba-4729-ad85-29a073fa2b54%2Ffiles%2FBrainMRIAgeClassificationUsingDeepLearning.mlx&embed=web) ▶️ [Run the example](https://matlab.mathworks.com/open/github/v1?repo=matlab-deep-learning/Brain-MRI-Age-Classification-using-Deep-Learning&file=BrainMRIAgeClassificationUsingDeepLearning.mlx)
+| 👀 View Example | ▶️ Run Example | 
+| :---: | :---: | 
+| [![View Brain-MRI-Age-Classification-using-Deep-Learning on File Exchange](https://www.mathworks.com/matlabcentral/images/matlab-file-exchange.svg)](https://viewer.mathworks.com/?viewer=live_code&url=https%3A%2F%2Fwww.mathworks.com%2Fmatlabcentral%2Fmlc-downloads%2Fdownloads%2Fcb382fe4-455d-46c6-a137-a396f1cfffd7%2F9f0a19d9-cbba-4729-ad85-29a073fa2b54%2Ffiles%2FBrainMRIAgeClassificationUsingDeepLearning.mlx&embed=web) | [![Open in MATLAB Online](https://www.mathworks.com/images/responsive/global/open-in-matlab-online.svg)](https://matlab.mathworks.com/open/github/v1?repo=matlab-deep-learning/Brain-MRI-Age-Classification-using-Deep-Learning&file=BrainMRIAgeClassificationUsingDeepLearning.mlx) |
 
 ### About the Data
 The MRI scans used in this example were obtained during a study \[1\] of social brain development conducted by researchers at the Massachussets Institute of Technology (MIT), and are available for download via the OpenNEURO platform:
